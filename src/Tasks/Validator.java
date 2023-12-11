@@ -250,4 +250,54 @@ public class Validator {
 
         return engineCapacity;
     }
+
+    /**
+     * Validates the given speed value.
+     * <p>
+     * The method checks if the provided speed is a positive number. If not, it will throw an IllegalArgumentException.
+     *
+     * @param speed the speed value to validate. It should be a positive number.
+     * @return the speed if it's a valid positive number.
+     * @throws IllegalArgumentException if the speed is not a positive number.
+     */
+    public static int validateSpeed(int speed) {
+        if (speed <= 0) {
+            throw new IllegalArgumentException("Speed must be a positive number");
+        }
+        return speed;
+    }
+
+    /**
+     * Validates the bite force of a Crocodile.
+     * <p>
+     * The bite force must be in the range 1-5000.
+     *
+     * @param biteForce the bite force to validate
+     * @return the bite force if it's valid
+     * @throws IllegalArgumentException if the bite force is out of range
+     */
+    public static int validateBiteForce(int biteForce) {
+        if (biteForce < 1 || biteForce > 5000) {
+            throw new IllegalArgumentException("Bite force must be between 1 and 5000");
+        }
+        return biteForce;
+    }
+
+    /**
+     * Validates that a provided jumpHeight is within valid range for a kangaroo
+     * according to data from National Geographic
+     *
+     * @param jumpHeight the jump height to validate
+     * @return The jump height if it is within valid range
+     * @throws IllegalArgumentException if the jump height is not within valid range
+     */
+    public static int validateJumpHeight(int jumpHeight) {
+        if (jumpHeight <= 0) {
+            throw new IllegalArgumentException("The jump height must be a positive integer.");
+        }
+        if (jumpHeight > 9) {
+            throw new IllegalArgumentException("The jump height must not exceed 9 meters.");
+        }
+        return jumpHeight;
+    }
 }

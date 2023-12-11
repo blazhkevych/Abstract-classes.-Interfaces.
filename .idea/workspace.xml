@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="238d21db-f5a5-4ce1-ba2f-f221fcec6e32" name="Changes" comment="" />
+    <list default="true" id="238d21db-f5a5-4ce1-ba2f-f221fcec6e32" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/T2/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/T2/Crocodile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/T2/Kangaroo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/T2/Tiger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Abstract classes. Interfaces/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/Validator.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +27,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Abstract classes. Interfaces" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -24,16 +37,21 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2ZOlrp4QD9KbQISxov5BUXg46WL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/blazh/Downloads/delete",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -48,6 +66,21 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\blazh\IdeaProjects\Abstract classes. Interfaces\src\Tasks\T1" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-21" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Abstract classes. Interfaces." />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -65,7 +98,9 @@
       <option name="presentableId" value="Default" />
       <updated>1702301207794</updated>
       <workItem from="1702301208838" duration="52000" />
-      <workItem from="1702301274391" duration="4772000" />
+      <workItem from="1702301274391" duration="5664000" />
+      <workItem from="1702306991316" duration="114000" />
+      <workItem from="1702307263909" duration="5121000" />
     </task>
     <servers />
   </component>
