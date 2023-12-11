@@ -1,6 +1,7 @@
 package Tasks;
 
 import java.time.LocalDate;
+import java.util.Arrays;
 import java.util.List;
 
 public class Validator {
@@ -299,5 +300,68 @@ public class Validator {
             throw new IllegalArgumentException("The jump height must not exceed 9 meters.");
         }
         return jumpHeight;
+    }
+
+    /**
+     * Validates the integer part of a money value and returns it
+     *
+     * @param integerPart the integer part of the money value to be validated
+     * @return the input value if it is a positive integer and within the range of int
+     * @throws IllegalArgumentException if the input value is negative or exceeds the maximum value of int
+     * @see Integer#MAX_VALUE
+     */
+    public static int validateIntegerDecimalPart(int integerPart) {
+        // Check if the input value is positive
+        if (integerPart < 0) {
+            throw new IllegalArgumentException("The integer part of the money value must be positive.");
+        }
+        // Check if the input value is within the range of int
+        // The maximum value of int is 2,147,483,647
+        if (integerPart > Integer.MAX_VALUE) {
+            throw new IllegalArgumentException("The maximum value of int is 2,147,483,647.");
+        }
+        // If both conditions are satisfied, return integerPart
+        return integerPart;
+    }
+
+    /**
+     * Validates and returns the currency type.
+     *
+     * @param currencyType the currency type to validate
+     * @return the validated currency type
+     * @throws IllegalArgumentException if the currency type is null, empty, or not a valid currency code
+     */
+    public static String validateCurrencyType(String currencyType) {
+        if (currencyType == null || currencyType.isEmpty()) {
+            throw new IllegalArgumentException("Currency type cannot be null or empty.");
+        }
+
+        // Array of valid currency codes (ISO 4217)
+        String[] validCurrencyCodes = {
+                "AED", "AFN", "ALL", "AMD", "ANG", "AOA", "ARS", "AUD", "AWG", "AZN",
+                "BAM", "BBD", "BDT", "BGN", "BHD", "BIF", "BMD", "BND", "BOB", "BRL",
+                "BSD", "BTN", "BWP", "BYN", "BZD", "CAD", "CDF", "CHF", "CLP", "CNY",
+                "COP", "CRC", "CUP", "CVE", "CZK", "DJF", "DKK", "DOP", "DZD", "EGP",
+                "ERN", "ETB", "EUR", "FJD", "FKP", "FOK", "GBP", "GEL", "GGP", "GHS",
+                "GIP", "GMD", "GNF", "GTQ", "GYD", "HKD", "HNL", "HRK", "HTG", "HUF",
+                "IDR", "ILS", "IMP", "INR", "IQD", "IRR", "ISK", "JEP", "JMD", "JOD",
+                "JPY", "KES", "KGS", "KHR", "KID", "KMF", "KRW", "KWD", "KYD", "KZT",
+                "LAK", "LBP", "LKR", "LRD", "LSL", "LYD", "MAD", "MDL", "MGA", "MKD",
+                "MMK", "MNT", "MOP", "MRU", "MUR", "MVR", "MWK", "MXN", "MYR", "MZN",
+                "NAD", "NGN", "NIO", "NOK", "NPR", "NZD", "OMR", "PAB", "PEN", "PGK",
+                "PHP", "PKR", "PLN", "PYG", "QAR", "RON", "RSD", "RUB", "RWF", "SAR",
+                "SBD", "SCR", "SDG", "SEK", "SGD", "SHP", "SLL", "SOS", "SRD", "SSP",
+                "STN", "SYP", "SZL", "THB", "TJS", "TMT", "TND", "TOP", "TRY", "TTD",
+                "TVD", "TWD", "TZS", "UAH", "UGX", "USD", "UYU", "UZS", "VES", "VND",
+                "VUV", "WST", "XAF", "XCD", "XDR", "XOF", "XPF", "YER", "ZAR", "ZMW",
+                "ZWL"
+        };
+
+        // Check if the provided currency type is in the list of valid codes
+        if (!Arrays.asList(validCurrencyCodes).contains(currencyType)) {
+            throw new IllegalArgumentException("Invalid currency type: " + currencyType);
+        }
+
+        return currencyType;
     }
 }

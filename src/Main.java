@@ -5,6 +5,8 @@ import Tasks.T1.Sailor;
 import Tasks.T2.Crocodile;
 import Tasks.T2.Kangaroo;
 import Tasks.T2.Tiger;
+import Tasks.T3.Money;
+import Tasks.T3.Product;
 
 public class Main {
 
@@ -65,6 +67,29 @@ public class Main {
     public static void t3Tests() {
         System.out.println("\n================= Start of T3 test =================\n");
 
+        // Create a Money object to set the product price
+        Money initialPrice = new Money(50, 99, "USD");
+
+        // Create a Product object
+        Product product = new Product("Example Product", initialPrice);
+
+        // Display information about the product
+        System.out.println("Product Details:");
+        System.out.println(product);
+
+        // Set a new name for the product
+        product.setName("New Product Name");
+
+        // Set a new price for the product
+        Money newPrice = new Money(29, 99, "USD");
+        product.setPrice(newPrice);
+
+        // Reduce the price of the product
+        product.reducePrice(10);
+
+        // Display updated information about the product
+        System.out.println("\nUpdated Product Details:");
+        System.out.println(product);
 
         System.out.println("\n================= End of T3 test =================\n");
     }
@@ -99,8 +124,8 @@ public class Main {
 
     public static void main(String[] args) {
         //t1Tests();
-        t2Tests();
-        //t3Tests();
+        //t2Tests();
+        t3Tests();
         //t4Tests();
         //t5Tests();
         //t6Tests();
