@@ -84,11 +84,15 @@ public class Main {
         Money newPrice = new Money(29, 99, "USD");
         product.setPrice(newPrice);
 
-        // Reduce the price of the product
-        product.reducePrice(10);
+        // Display updated information about the product with the new name and price
+        System.out.println("\nUpdated Product with the new name and price. Details:");
+        System.out.println(product);
 
-        // Display updated information about the product
-        System.out.println("\nUpdated Product Details:");
+        // Reduce the price of the product
+        product.reducePrice(10.50);
+
+        // Display updated information about the product with the new price after reduction
+        System.out.println("\nUpdated Product with the new price after reduction 10.50. Details:");
         System.out.println(product);
 
         System.out.println("\n================= End of T3 test =================\n");

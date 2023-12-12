@@ -112,4 +112,59 @@ public class Money {
                 "," + decimalPart +
                 " " + currencyType;
     }
+
+    /**
+     * Converts the integer and decimal parts of money to a decimal representation.
+     *
+     * @param integerPart the integer part of the money value
+     * @param decimalPart the decimal part of the money value
+     * @return the decimal representation of the money value
+     */
+    public static double makeMoneyDecimalRepresentation(int integerPart, int decimalPart) {
+        return Double.parseDouble(integerPart + "." + decimalPart);
+    }
+
+    /**
+     * Creates a Money object from a given decimal representation.
+     *
+     * @param decimalRepresentation the decimal representation of the money value
+     * @return a Money object representing the given decimal value
+     */
+    public static Money makeMoneyFromDecimalRepresentation(double decimalRepresentation) {
+        // Extract the integer and decimal parts from the decimal representation
+        int integerPart = (int) decimalRepresentation;
+        int decimalPart = (int) ((decimalRepresentation - integerPart) * 100);
+
+        // Create and return a new Money object
+        return new Money(integerPart, decimalPart);
+    }
+
+    /**
+     * Reduces the price of the product by the specified amount.
+     *
+     * @param reduction the amount by which to reduce the product price, must be a non-negative value
+     * @throws IllegalArgumentException if the reduction is greater than the current price
+     */
+    public void reducePrice(double reduction) {
+        // Calculate the new price in decimal representation after reduction
+        double newPriceInDecimalRepresentation = Money.makeMoneyDecimalRepresentation(getIntegerPart(), getDecimalPart());
+
+        // Check if the reduction is greater than the new price
+        if (reduction > newPriceInDecimalRepresentation ) {
+            throw new IllegalArgumentException("Reduction cannot be greater than product price!");
+        }
+        if (reduction < 0) {
+            throw new IllegalArgumentException("Reduction cannot be negative!");
+        }
+
+        // Reduce the price by the specified amount
+        newPriceInDecimalRepresentation -= reduction;
+
+        // Create a new Money object from the updated decimal representation
+        Money newPrice = Money.makeMoneyFromDecimalRepresentation(newPriceInDecimalRepresentation);
+
+        // Update the product price with the new values
+        this.setIntegerPart(newPrice.getIntegerPart());
+        this.setDecimalPart(newPrice.getDecimalPart());
+    }
 }

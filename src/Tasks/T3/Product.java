@@ -1,6 +1,5 @@
 package Tasks.T3;
 
-import Tasks.T3.Money;
 import Tasks.Validator;
 
 /**
@@ -54,15 +53,12 @@ public class Product {
     /**
      * Reduces the price of the product by the specified amount.
      *
-     * @param reduction the amount by which to reduce the product price
-     * @throws IllegalArgumentException if the reduction is greater than the current integer part of the price
+     * @param reduction the amount by which to reduce the product price, must be a non-negative value
+     * @throws IllegalArgumentException if the reduction is greater than the current price
      */
-    public void reducePrice(int reduction) {
-        if (price.getIntegerPart() >= reduction) {
-            price.setIntegerPart(price.getIntegerPart() - reduction);
-        } else {
-            System.out.println("Reduction cannot be greater than product price!");
-        }
+    public void reducePrice(double reduction) {
+        // Delegates the reduction logic to the Money class
+        price.reducePrice(reduction);
     }
 
     /**

@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="238d21db-f5a5-4ce1-ba2f-f221fcec6e32" name="Changes" comment="# Add validation methods and animal classes&#10;&#10;Added new validation methods to the Validator class and created new animal classes (Tiger, Crocodile, Kangaroo) which extend the Animal base class. Modified the Main class to include tests for the new animal classes. Adjustments were also made on the existing classes and methods to include further detailed printed messages.">
-      <change afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/T3/Product.java" afterDir="false" />
+    <list default="true" id="238d21db-f5a5-4ce1-ba2f-f221fcec6e32" name="Changes" comment="# T3 done">
       <change beforePath="$PROJECT_DIR$/../Abstract classes. Interfaces/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/T3/Money.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/T3/Money.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/T3/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/T3/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +53,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/blazh/IdeaProjects/Abstract classes. Interfaces/src/Main.java",
-    "settings.editor.selected.configurable": "com.github.copilot.settings.ApplicationConfigurable",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -99,7 +98,8 @@
       <workItem from="1702307263909" duration="6087000" />
       <workItem from="1702314571622" duration="1405000" />
       <workItem from="1702315998498" duration="1002000" />
-      <workItem from="1702317019796" duration="4098000" />
+      <workItem from="1702317019796" duration="4301000" />
+      <workItem from="1702367941557" duration="5734000" />
     </task>
     <task id="LOCAL-00001" summary="# Add validation methods and animal classes&#10;&#10;Added new validation methods to the Validator class and created new animal classes (Tiger, Crocodile, Kangaroo) which extend the Animal base class. Modified the Main class to include tests for the new animal classes. Adjustments were also made on the existing classes and methods to include further detailed printed messages.">
       <option name="closed" value="true" />
@@ -109,7 +109,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702312788921</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="# T3 done">
+      <option name="closed" value="true" />
+      <created>1702321335850</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702321335850</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,7 +125,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="# Add validation methods and animal classes&#10;&#10;Added new validation methods to the Validator class and created new animal classes (Tiger, Crocodile, Kangaroo) which extend the Animal base class. Modified the Main class to include tests for the new animal classes. Adjustments were also made on the existing classes and methods to include further detailed printed messages." />
-    <option name="LAST_COMMIT_MESSAGE" value="# Add validation methods and animal classes&#10;&#10;Added new validation methods to the Validator class and created new animal classes (Tiger, Crocodile, Kangaroo) which extend the Animal base class. Modified the Main class to include tests for the new animal classes. Adjustments were also made on the existing classes and methods to include further detailed printed messages." />
+    <MESSAGE value="# T3 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="# T3 done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
