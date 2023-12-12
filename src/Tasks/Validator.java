@@ -364,4 +364,17 @@ public class Validator {
 
         return currencyType;
     }
+
+    /**
+     * Validates an array to ensure it is not empty.
+     *
+     * @param array     The array to be validated.
+     * @param errorText The error message to be displayed in case of validation failure.
+     * @throws IllegalArgumentException If the array is empty.
+     */
+    public static void validateArrayNotEmpty(int[] array, String errorText) {
+        if (array.length == 0) {
+            throw new IllegalArgumentException(errorText);
+        }
+    }
 }

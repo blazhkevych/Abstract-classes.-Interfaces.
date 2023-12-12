@@ -4,11 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="238d21db-f5a5-4ce1-ba2f-f221fcec6e32" name="Changes" comment="# T3 done">
+    <list default="true" id="238d21db-f5a5-4ce1-ba2f-f221fcec6e32" name="Changes" comment="# T3. Product, Money updated.">
+      <change afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/T4/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/T4/Device.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/T4/Kettle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/T4/Microwave.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/T4/Ship.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/T5/Cello.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/T5/MusicalInstrument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/T5/Trombone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/T5/Ukulele.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/T5/Violin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/T6/Array.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/T6/IMath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/T7/Array.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/T7/ISort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Abstract classes. Interfaces/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/T3/Money.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/T3/Money.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/T3/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/T3/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Abstract classes. Interfaces/src/Tasks/Validator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +32,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -37,29 +51,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/blazh/Downloads/delete",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/blazh/IdeaProjects/Abstract classes. Interfaces/src/Main.java",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/blazh/Downloads/delete&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/blazh/IdeaProjects/Abstract classes. Interfaces/src/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\blazh\IdeaProjects\Abstract classes. Interfaces\src\Tasks\T1" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Tasks.T5" />
     </key>
   </component>
   <component name="RunManager">
@@ -99,7 +116,9 @@
       <workItem from="1702314571622" duration="1405000" />
       <workItem from="1702315998498" duration="1002000" />
       <workItem from="1702317019796" duration="4301000" />
-      <workItem from="1702367941557" duration="5734000" />
+      <workItem from="1702367941557" duration="10608000" />
+      <workItem from="1702383747005" duration="69000" />
+      <workItem from="1702385563410" duration="6370000" />
     </task>
     <task id="LOCAL-00001" summary="# Add validation methods and animal classes&#10;&#10;Added new validation methods to the Validator class and created new animal classes (Tiger, Crocodile, Kangaroo) which extend the Animal base class. Modified the Main class to include tests for the new animal classes. Adjustments were also made on the existing classes and methods to include further detailed printed messages.">
       <option name="closed" value="true" />
@@ -117,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702321335850</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="# T3. Product, Money updated.">
+      <option name="closed" value="true" />
+      <created>1702375302945</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702375302945</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,7 +153,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="# Add validation methods and animal classes&#10;&#10;Added new validation methods to the Validator class and created new animal classes (Tiger, Crocodile, Kangaroo) which extend the Animal base class. Modified the Main class to include tests for the new animal classes. Adjustments were also made on the existing classes and methods to include further detailed printed messages." />
     <MESSAGE value="# T3 done" />
-    <option name="LAST_COMMIT_MESSAGE" value="# T3 done" />
+    <MESSAGE value="# T3. Product, Money updated." />
+    <option name="LAST_COMMIT_MESSAGE" value="# T3. Product, Money updated." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -7,9 +7,27 @@ import Tasks.T2.Kangaroo;
 import Tasks.T2.Tiger;
 import Tasks.T3.Money;
 import Tasks.T3.Product;
+import Tasks.T4.Car;
+import Tasks.T4.Device;
+import Tasks.T4.Kettle;
+import Tasks.T4.Microwave;
+import Tasks.T4.Ship;
+import Tasks.T5.Cello;
+import Tasks.T5.Trombone;
+import Tasks.T5.Ukulele;
+import Tasks.T5.Violin;
+import Tasks.T6.Array;
 
+import java.util.Arrays;
+
+/**
+ * The Main class contains methods to test different tasks.
+ */
 public class Main {
 
+    /**
+     * Test method for Task 1 classes.
+     */
     public static void t1Tests() {
         System.out.println("\n================= Start of T1 test =================\n");
 
@@ -39,6 +57,9 @@ public class Main {
         System.out.println("\n================= End of T1 test =================\n");
     }
 
+    /**
+     * Test method for Task 2 classes.
+     */
     public static void t2Tests() {
         System.out.println("\n================= Start of T2 test =================\n");
 
@@ -64,6 +85,9 @@ public class Main {
         System.out.println("\n================= End of T2 test =================\n");
     }
 
+    /**
+     * Test method for Task 3 classes.
+     */
     public static void t3Tests() {
         System.out.println("\n================= Start of T3 test =================\n");
 
@@ -98,42 +122,147 @@ public class Main {
         System.out.println("\n================= End of T3 test =================\n");
     }
 
+    /**
+     * Test method for Task 4 classes.
+     */
     public static void t4Tests() {
         System.out.println("\n================= Start of T4 test =================\n");
 
+        Device device = new Device("Generic Device", "Generic Characteristics");
+        Car car = new Car("Toyota", "Sedan");
+        Kettle kettle = new Kettle("Electric Kettle", "1.7L capacity");
+        Microwave microwave = new Microwave("Microwave Oven", "1200W power");
+        Ship ship = new Ship("Cargo Ship", "Large capacity");
+
+        device.show();
+        device.desc();
+        device.sound();
+
+        System.out.println("\n");
+        car.show();
+        car.desc();
+        car.sound();
+
+        System.out.println("\n");
+        kettle.show();
+        kettle.desc();
+        kettle.sound();
+
+        System.out.println("\n");
+        microwave.show();
+        microwave.desc();
+        microwave.sound();
+
+        System.out.println("\n");
+        ship.show();
+        ship.desc();
+        ship.sound();
 
         System.out.println("\n================= End of T4 test =================\n");
     }
 
+    /**
+     * Test method for Task 5 classes.
+     */
     public static void t5Tests() {
         System.out.println("\n================= Start of T5 test =================\n");
 
+        // Create objects of each class
+        Violin violin = new Violin("Violin", "Horsehair");
+        Trombone trombone = new Trombone("Trombone", "Brass");
+        Ukulele ukulele = new Ukulele("Ukulele", "4");
+        Cello cello = new Cello("Cello", "Full-size");
+
+        // Using each object's methods
+        System.out.println("---- Violin ----");
+        violin.show();
+        violin.sound();
+        violin.desc();
+        violin.history();
+
+        System.out.println("\n---- Trombone ----");
+        trombone.show();
+        trombone.sound();
+        trombone.desc();
+        trombone.history();
+
+        System.out.println("\n---- Ukulele ----");
+        ukulele.show();
+        ukulele.sound();
+        ukulele.desc();
+        ukulele.history();
+
+        System.out.println("\n---- Cello ----");
+        cello.show();
+        cello.sound();
+        cello.desc();
+        cello.history();
 
         System.out.println("\n================= End of T5 test =================\n");
     }
 
+    /**
+     * Test method for Task 6 classes.
+     */
     public static void t6Tests() {
         System.out.println("\n================= Start of T6 test =================\n");
 
+        int[] sampleArray = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5};
+
+        Array array = new Array(sampleArray);
+
+        // Тестирование методов
+        System.out.println("Max: " + array.Max());
+        System.out.println("Min: " + array.Min());
+        System.out.println("Avg: " + array.Avg());
 
         System.out.println("\n================= End of T6 test =================\n");
     }
 
+    /**
+     * Test method for Task 7 classes.
+     */
     public static void t7Tests() {
         System.out.println("\n================= Start of T7 test =================\n");
 
+        // Example array
+        int[] testArray = {5, 2, 8, 1, 6};
+
+        // Creating an Array object from Tasks.T7
+        Tasks.T7.Array arrayT7 = new Tasks.T7.Array(testArray);
+
+        // Displaying the original array
+        System.out.println("Original array: " + Arrays.toString(testArray));
+
+        // Calculating and displaying statistics using IMath interface methods
+        System.out.println("Maximum value: " + arrayT7.Max());
+        System.out.println("Minimum value: " + arrayT7.Min());
+        System.out.println("Average value: " + arrayT7.Avg());
+
+        // Sorting and displaying the array in ascending order
+        arrayT7.SortAsc();
+        System.out.println("Sorted in ascending order: " + Arrays.toString(arrayT7.getElements()));
+
+        // Sorting and displaying the array in descending order
+        arrayT7.SortDesc();
+        System.out.println("Sorted in descending order: " + Arrays.toString(arrayT7.getElements()));
 
         System.out.println("\n================= End of T7 test =================\n");
     }
 
+    /**
+     * The main method to run the tests.
+     *
+     * @param args Command line arguments (not used).
+     */
     public static void main(String[] args) {
-        //t1Tests();
-        //t2Tests();
-        t3Tests();
-        //t4Tests();
-        //t5Tests();
-        //t6Tests();
-        //t7Tests();
-
+        // Uncomment the method calls for the tests you want to run
+        // t1Tests();
+        // t2Tests();
+        // t3Tests();
+        // t4Tests();
+        // t5Tests();
+        // t6Tests();
+        // t7Tests();
     }
 }
